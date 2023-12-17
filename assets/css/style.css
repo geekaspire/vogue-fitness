@@ -469,14 +469,21 @@ iframe {
     4. Header CSS
 *******************************************************/
 .fit_header_wrapper {
-  padding: 30px 0;
-  position: absolute;
+  padding: 12px 0;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
   right: 0;
   border-bottom: 1px solid var(--main-border-color);
+  background-color: transparent; /* Initial background color */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
 }
+
+body.scroll-down .fit_header_wrapper {
+  background-color: #101a30; /* Background color on scroll down */
+}
+
 .main_menu_parent {
   display: flex;
   justify-content: flex-end;
@@ -756,7 +763,7 @@ iframe {
   line-height: 76px;
 }
 .fit_banner_text h2 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--white-color);
   line-height: 42px;
@@ -2292,7 +2299,7 @@ span.fit_user_name2 {
     21. Contact section
 *******************************************************/
 .fit_location_wrapper {
-  padding-bottom: 230px;
+  /* padding-bottom: 230px; */
 }
 .fit_location_inner {
   background: var(--main-bg-color);
@@ -2356,7 +2363,7 @@ span.fit_user_name2 {
   background: var(--main-bg-color);
   padding: 55px 60px 60px;
   border-radius: 10px;
-  position: absolute;
+  /* position: absolute; */
   top: -160px;
   z-index: 1;
 }
@@ -2944,35 +2951,6 @@ span.fit_user_name2 {
   }
 }
 
-.gallery {
-  position: relative;
-  width: min(100vmin, 820px);
-
-  & img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
-}
-
-.hero {
-  aspect-ratio: 3/2;
-}
-
-.fadeIn {
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.6;
-  }
-  90% {
-    opacity: 1;
-  }
-}
-
 .btns {
   list-style-type: none;
   display: flex;
@@ -3005,4 +2983,147 @@ span.fit_user_name2 {
 
 .fit_upcoming_wrapper_1 blockquote.instagram-media img {
   height: 100% !important;
+}
+
+.header-top {
+  position: relative;
+  padding: 12px 0;
+  background-color: var(--title-color);
+  --body-color: #b2b2b2;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#slider {
+  margin: 0 auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+.slides {
+  overflow: hidden;
+  animation-name: fade;
+  animation-duration: 1s;
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+#dot {
+  margin: 0 auto;
+  text-align: center;
+}
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+  background: #d3d3d3;
+  padding: 8px;
+  margin: 10px 5px;
+}
+
+.active {
+  background: black;
+}
+
+@media (max-width: 567px) {
+  #slider {
+    width: 100%;
+  }
+}
+
+.gallery-2 {
+  width: 100%;
+  max-width: 620px;
+  margin: 40px auto;
+}
+.gallery-2-slider {
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+.gallery-2-slider .swiper-slide {
+  width: auto;
+  height: 400px;
+}
+.gallery-2-slider .swiper-slide img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+.gallery-2-thumbs {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.gallery-2-thumbs .swiper-slide {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.1;
+}
+.gallery-2-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+.gallery-2-thumbs .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+.shareit {
+  position: fixed;
+  top: 220px;
+  right: 0;
+  z-index: 10;
+}
+
+.shareit a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+  opacity: 0.75;
+  transition: opacity 0.15s linear;
+  text-decoration: none;
+}
+
+.shareit a:hover {
+  opacity: 1;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.twitter {
+  background: #cd486b;
+}
+
+.linkedin {
+  background: #25d366;
+}
+
+.reddit {
+  background: #ff4500;
+}
+
+.tumblr {
+  background: #000000;
+}
+
+.pinterest {
+  background: #cb2027;
 }

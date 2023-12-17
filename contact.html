@@ -342,6 +342,20 @@
   <script src="assets/js/SmoothScroll.min.js"></script>
   <script src="assets/js/custom.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var header = document.querySelector(".fit_header_wrapper");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 0) {
+            document.body.classList.add("scroll-down");
+          } else {
+            document.body.classList.remove("scroll-down");
+          }
+        });
+      });
+  </script>
+
 </body>
 
 </html>

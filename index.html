@@ -66,8 +66,7 @@
         </div>
       </div>
     </div>
-    <!-- Search box end -->
-    <!-- Header section start -->
+
     <header class="fit_header_wrapper">
       <div class="container">
         <div class="row align-items-center" style="flex-wrap: nowrap">
@@ -121,6 +120,36 @@
       </div>
     </header>
     <div class="sidebar_ovelay toggle_btn"></div>
+
+    <div class="shareit">
+      <!-- facebook -->
+      <a
+        class="facebook"
+        href="https://www.facebook.com/voguehealthclub?mibextid=LQQJ4d"
+        target="blank"
+        title="facebook"
+        ><i class="fa fa-facebook"></i
+      ></a>
+
+      <!-- twitter -->
+      <a
+        class="twitter"
+        href="https://instagram.com/voguehealthclub?igshid=OGQ5ZDc2ODk2ZA=="
+        target="blank"
+        title="twitter"
+        ><i class="fa fa-instagram"></i
+      ></a>
+
+      <!-- linkedin -->
+      <a
+        class="linkedin"
+        href="https://api.whatsapp.com/send/?phone=918147127575&text&type=phone_number&app_absent=0"
+        target="blank"
+        title="linkedin"
+        ><i class="fa fa-whatsapp"></i
+      ></a>
+    </div>
+
     <!-- Header section end -->
     <!-- Banner section start -->
     <section class="fit_banner_wrapper">
@@ -137,7 +166,7 @@
                       Let the flames of fitness passion blaze at Vogue Ignite.
                       Fuel your journey with determination, sweat, and triumph
                     </h2>
-                    <div class="banner_btn_wrap">
+                    <div style="margin-left: 10px" class="banner_btn_wrap">
                       <a href="about.html" class="fit_btn">Read More</a>
                       <a href="contact.html" class="fit_btn btn2">Join Now</a>
                     </div>
@@ -150,12 +179,13 @@
               <div class="row">
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
                   <div class="fit_banner_text">
-                    <h1>You Only Fail When You Stop Trying</h1>
+                    <h1>Best Gym in JP Nagar, Bangalore</h1>
                     <h2>
-                      Let the flames of fitness passion blaze at Vogue Ignite.
-                      Fuel your journey with determination, sweat, and triumph
+                      Unleash the power within you and sculpt the physique
+                      you've always dreamed of with our cutting-edge workouts
+                      and expert guidance.
                     </h2>
-                    <div class="banner_btn_wrap">
+                    <div style="margin-left: 10px" class="banner_btn_wrap">
                       <a href="about.html" class="fit_btn">Read More</a>
                       <a href="contact.html" class="fit_btn btn2">Join Now</a>
                     </div>
@@ -268,7 +298,7 @@
                   confidence, energy, and well-being. Your journey to a better
                   you begins at Vogue Gym.
                 </p>
-                <a href="javascript:void(0);" class="fit_btn">Read More</a>
+                <a href="about.html" class="fit_btn">Read More</a>
               </div>
             </div>
             <div class="col-lg-12 col-md-12">
@@ -509,7 +539,7 @@
           <div class="col-lg-6 col-md-12">
             <div class="fit_onclass_video">
               <img
-                src="assets/images/diabetes.jpg"
+                src="assets/images/diabetes.png"
                 class="img-fluid"
                 alt="image"
               />
@@ -753,19 +783,37 @@
         <div class="row">
           <div
             class="col-xl-12 col-lg-8 col-md-10 col-sm-12 col-12 offset-xl-0 offset-lg-2 offset-md-1"
-            style="display: flex; justify-content: center"
           >
-            <div class="gallery">
-              <div class="hero">
-                <img src="assets/images/sl1.png" />
+            <div id="slider">
+              <div class="slides">
+                <img src="assets/images/sl1.png" width="100%" />
               </div>
-              <ul class="btns">
-                <li><img src="assets/images/sl2.png" /></li>
-                <li><img src="assets/images/sl3.png" /></li>
-                <li><img src="assets/images/sl4.png" /></li>
-                <li><img src="assets/images/sl5.png" /></li>
-                <li><img src="assets/images/sl6.png" /></li>
-              </ul>
+
+              <div class="slides">
+                <img src="assets/images/sl2.png" width="100%" />
+              </div>
+
+              <div class="slides">
+                <img src="assets/images/sl3.png" width="100%" />
+              </div>
+
+              <div class="slides">
+                <img src="assets/images/sl4.png" width="100%" />
+              </div>
+
+              <div class="slides">
+                <img src="assets/images/sl5.png" width="100%" />
+              </div>
+
+              <!-- <div class="slides">
+                <img src="assets/images/sl6.png" width="100%" />
+              </div> -->
+
+              <div id="dot">
+                <span class="dot"></span><span class="dot"></span
+                ><span class="dot"></span><span class="dot"></span
+                ><span class="dot"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -1561,7 +1609,7 @@
           <div class="col-md-12 text-center">
             <div class="fit_copy_box">
               <p>
-                Copyright © 2023
+                Copyright © 2024
                 <a href="javascript:void(0);">Vogue Fitness.</a> All Right
                 Reserved | Developed by
                 <a href="https://iamsreerag.com">Sreerag Codes</a>
@@ -1574,13 +1622,15 @@
     <!-- Copyright section end -->
     <!-- go to  top -->
 
-    <a href="whatsapp://send?phone=918147127575"
+    <a href="javascript:void(0);" id="scroll" class="active">Top</a>
+
+    <!-- <a href="whatsapp://send?phone=918147127575"
       ><svg viewBox="0 0 32 32" class="whatsapp-ico">
         <path
           d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"
           fill-rule="evenodd"
         ></path></svg
-    ></a>
+    ></a> -->
 
     <!-- js files start -->
     <script src="assets/js/jquery.min.js"></script>
@@ -1606,6 +1656,46 @@
         autoplay: {
           delay: 3000,
         },
+      });
+
+      var index = 0;
+      var slides = document.querySelectorAll(".slides");
+      var dot = document.querySelectorAll(".dot");
+
+      function changeSlide() {
+        if (index < 0) {
+          index = slides.length - 1;
+        }
+
+        if (index > slides.length - 1) {
+          index = 0;
+        }
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          dot[i].classList.remove("active");
+        }
+
+        slides[index].style.display = "block";
+        dot[index].classList.add("active");
+
+        index++;
+
+        setTimeout(changeSlide, 2000);
+      }
+
+      changeSlide();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var header = document.querySelector(".fit_header_wrapper");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 0) {
+            document.body.classList.add("scroll-down");
+          } else {
+            document.body.classList.remove("scroll-down");
+          }
+        });
       });
     </script>
   </body>
